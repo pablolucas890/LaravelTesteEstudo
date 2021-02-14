@@ -16,4 +16,16 @@ class MeuControlador extends Controller
         echo '<li> Mouse </li>';
         echo '</ol>';
     }
+
+    public function getNome(){
+        echo 'Olá João';
+    }
+
+    public function getIdade(){
+        echo '44 anos';
+    }
+
+    public function multiplicar($n1,$n2){
+        echo $n1 * $n2;
+    }
 }

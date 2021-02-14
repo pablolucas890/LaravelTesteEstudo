@@ -17,9 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('produtos', 'App\Http\Controllers\MeuControlador@produtos');
-
-/*
 Route::get('/ola/sejabemvindo', function () {
     echo "Olá, Seja Bem Vindo!";
 });
@@ -27,4 +24,11 @@ Route::get('/ola/sejabemvindo', function () {
 Route::get('/ola2/{nome}', function ($nomeRecebido) {
     echo "Olá, Seja Bem Vindo!".$nomeRecebido;
 })->where('nome','[A-Za-z]+');
-*/
+
+Route::get('produtos', 'App\Http\Controllers\MeuControlador@produtos');
+
+Route::get('nome', 'App\Http\Controllers\MeuControlador@getNome');
+
+Route::get('idade', 'App\Http\Controllers\MeuControlador@getIdade');
+
+Route::get('multiplicar/{n1}/{n2}', 'App\Http\Controllers\MeuControlador@multiplicar');
