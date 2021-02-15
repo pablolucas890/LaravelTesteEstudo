@@ -4,3 +4,4 @@
 -php artisan make:controller MeuControlador -> cria o controlador MeuControlador em App/Http/Controlers
 -controlador é uma classe com as funções
 -para chamar a classe: Route::get('produtos', 'App\Http\Controllers\MeuControlador@produtos');
+-php artisan make:controller MeuControlador --resouce -> cria o controlador com metodos prontos

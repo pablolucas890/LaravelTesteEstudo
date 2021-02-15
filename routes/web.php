@@ -32,3 +32,5 @@ Route::get('nome', 'App\Http\Controllers\MeuControlador@getNome');
 Route::get('idade', 'App\Http\Controllers\MeuControlador@getIdade');
 
 Route::get('multiplicar/{n1}/{n2}', 'App\Http\Controllers\MeuControlador@multiplicar');
+
+Route::resource('clientes','App\Http\Controllers\ClienteControlador'); //Associa cada função do controlador à uma rota
